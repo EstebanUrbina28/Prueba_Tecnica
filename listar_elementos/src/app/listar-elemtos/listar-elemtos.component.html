@@ -1,0 +1,17 @@
+
+    <h2><p>Hola aqui vamos a listar los elemostos</p></h2>
+    <br>
+    <b><p>lista de los 10 repositorios más populares en GitHub </p> </b>
+    <br>
+    <!-- listar-elemtos.component.html -->
+
+    <div *ngIf="repositorios" class="repos-container">
+      <h2 class="repos-title">Lista de Repositorios de GitHub</h2>
+      <ul class="repos-list">
+        <li *ngFor="let repo of repositorios" class="repo-item">
+          <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+        </li>
+      </ul>
+    </div>
+ <footer>Este programa lo realizo Esteban urbina</footer>  
+  
